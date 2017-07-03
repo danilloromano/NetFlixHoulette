@@ -1,0 +1,79 @@
+body {
+  background-color: #141414;
+  font-family: sans-serif;
+}
+
+.linkFilmsWrapper{
+  position: absolute;
+  left: 80%;
+  top: 15%;
+}
+
+.linkFilms {
+  background-color: #E50914;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.headerHome {
+  background-color: #E50914;
+  height: 50px;
+}
+
+.headerTitle {
+  color: white;
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  padding-top: 10px;
+  margin-left: 45%;
+}
+.userTitle {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  color: white;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+.userForm {
+  position: absolute;;
+  top: 40%;
+  left: 40%;
+}
+
+.inputPosition {
+  margin: 20px;
+}
+
+.userInput {
+  width: 280px;
+  height: 25px;
+  outline: 0;
+  border: 0 none;
+  border-bottom: 1px solid #E50914;
+  color: white;
+  background-color: #141414;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #E50914;
+}
+
+.userButton {
+  margin-left: 20px;
+  width: 280px;
+  height: 25px;
+  color: white;
+  background-color: #E50914;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}

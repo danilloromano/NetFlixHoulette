@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+    <body>
+      <header class="headerHome">
+        <h2 class="headerTitle">NetFlixHollet</h2>
+      </header>
+      <div class="linkUserWrapper">
+        <a href="/#!/home" class="linkUser">Go to home</a>
+      </div>
+        <div class="container">
+          <h1 class="filmsTitle">Serch for your favorite film</h1>
+          <input type="text" name="name" value="" class="searchInput" placeholder="Search:" id="select" ng-model="inputSearch">
+          <div class="wrapper">
+            <select class="selectOptions" name="" ng-model="options">
+              <option value="actor=">Actor</option>
+              <option value="director=">Director</option>
+              <option value="title=">Title</option>
+            </select>
+            <button type="button" name="button" ng-click='search()' class="searchButton" >Search</button>
+          </div>
+        </div>
+      <div class="filmsContainer" ng-repeat="film in films">
+        <section class="film">
+          <div class="fdp">
+            <h2 class="filmTitle" ng-model="film.show_title">{{film.show_title}}</h2>
+            <img src="{{film.poster}}" alt="" class="imageFilm" ng-model="film.poster"/>
+          </div>
+            <dl class="descriptionFilm">
+              <div>
+                <dt class="inlineTitle">Category:</dt>
+                <dd class="inlineTitle">{{film.category}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Director:</dt>
+                <dd class="inlineTitle">{{film.director}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Rating:</dt>
+                <dd class="inlineTitle">{{film.rating}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Release Year:</dt>
+                <dd class="inlineTitle">{{film.release_year}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Runtime:</dt>
+                <dd class="inlineTitle">{{film.runtime}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Cast:</dt>
+                <dd class="inlineTitle">{{film.show_cast}}</dd>
+              </div>
+              <div>
+                <dt class="inlineTitle">Summary:</dt>
+                <dd class="inlineTitle">{{film.summary}}</dd>
+              </div>
+            </dl>
+        </section>
+      </div>
+  </body>
+</html>

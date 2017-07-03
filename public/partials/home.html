@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CatFlix</title>
+  </head>
+  <body>
+    <header class="headerHome">
+      <h2 class="headerTitle">NetFlixHollet</h2>
+    </header>
+      <div class="linkFilmsWrapper">
+        <a  href="/#!/films" class="linkFilms">Search films</a>
+      </div>
+      <h1 class="userTitle">User Registration</h1>
+      <form class="userForm"  ng-submit = "addUser(user)">
+        <div class="inputPosition">
+          <input type="text" name="email" value="" class="userInput" placeholder="Email :" ng-model="user.email">
+        </div>
+        <div class="inputPosition">
+          <input type="password" name="password" value="" class="userInput" placeholder="Password :" ng-model="user.password">
+        </div>
+        <div class="buttonPosition">
+          <button type="submit" name="button" class="userButton">Save</button>
+        </div>
+      </form>
+  </body>
+</html>

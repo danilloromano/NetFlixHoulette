@@ -1,0 +1,115 @@
+span{
+  color: white;
+}
+.linkUserWrapper{
+  position: absolute;
+  left: 80%;
+  top: 15%;
+}
+
+.linkUser {
+  background-color: #E50914;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container {
+  margin-top: 40px;
+  margin-left: 35%;
+}
+
+.filmsTitle {
+  color: white;
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+
+.searchInput {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 350px;
+  outline: 0;
+  border: 0 none;
+  border-bottom: 1px solid #E50914;
+  color: white;
+  background-color: #141414;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #E50914;
+}
+
+.wrapper {
+  margin-top:30px;
+  margin-left: 130px;
+}
+
+.selectOptions{
+  display: block;
+  margin-bottom: 20px;
+  padding: 0px 0px 0px 50px;
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #E50914;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.searchButton {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: #E50914;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.filmsContainer {
+  height: 40%;
+  width: 70%;
+  margin: 5% 20% 0 20%;
+  overflow: hidden;
+}
+
+.filmTitle {
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+.imageFilm {
+  width: 200px;
+  height: 300px;
+}
+
+.descriptionFilm {
+  width: 70%;
+  max-width: 800px;
+  float: right;
+  clear: none;
+  color: white;
+  margin-right: 5%;
+}
+
+.descriptionFilm div {
+  margin-bottom: 10px;
+}
+
+.inlineTitle {
+  display: inline;
+}
+
+.fdp{
+display: inline;
+}
