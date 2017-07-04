@@ -1,6 +1,13 @@
 span{
   color: white;
 }
+
+.messageError {
+  margin-top: 20px;
+  margin-left: 12%;
+  color: #E50914;
+}
+
 .linkUserWrapper{
   position: absolute;
   left: 80%;

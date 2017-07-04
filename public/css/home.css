@@ -30,6 +30,7 @@ body {
   font-family: 'Anton', sans-serif;
   padding-top: 10px;
   margin-left: 45%;
+  text-shadow: 2px 2px #141414;
 }
 .userTitle {
   position: absolute;
@@ -59,6 +60,12 @@ body {
   color: white;
   background-color: #141414;
   font-size: 15px;
+}
+
+.error {
+  margin-top: 10px;
+  color: #E50914;
+
 }
 
 ::-webkit-input-placeholder {

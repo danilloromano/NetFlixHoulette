@@ -12,12 +12,14 @@
         <a  href="/#!/films" class="linkFilms">Search films</a>
       </div>
       <h1 class="userTitle">User Registration</h1>
-      <form class="userForm"  ng-submit = "addUser(user)">
+      <form class="userForm"  ng-submit = "addUser()">
         <div class="inputPosition">
           <input type="text" name="email" value="" class="userInput" placeholder="Email :" ng-model="user.email">
+          <p class = "error">{{errorMessageEmail}}</p>
         </div>
         <div class="inputPosition">
           <input type="password" name="password" value="" class="userInput" placeholder="Password :" ng-model="user.password">
+          <p class = "error">{{errorMessagePassword}}</p>
         </div>
         <div class="buttonPosition">
           <button type="submit" name="button" class="userButton">Save</button>

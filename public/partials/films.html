@@ -3,25 +3,22 @@
   <head>
     <meta charset="utf-8">
   </head>
-    <body>
-      <header class="headerHome">
-        <h2 class="headerTitle">NetFlixHollet</h2>
-      </header>
+  <body>
+    <header class="headerHome">
+      <h2 class="headerTitle">NetFlixHolette</h2>
+    </header>
       <div class="linkUserWrapper">
         <a href="/#!/home" class="linkUser">Go to home</a>
       </div>
-        <div class="container">
-          <h1 class="filmsTitle">Serch for your favorite film</h1>
-          <input type="text" name="name" value="" class="searchInput" placeholder="Search:" id="select" ng-model="inputSearch">
-          <div class="wrapper">
-            <select class="selectOptions" name="" ng-model="options">
-              <option value="actor=">Actor</option>
-              <option value="director=">Director</option>
-              <option value="title=">Title</option>
-            </select>
-            <button type="button" name="button" ng-click='search()' class="searchButton" >Search</button>
-          </div>
+      <div class="container">
+        <h1 class="filmsTitle">Serch for your favorite film</h1>
+        <input type="text" name="name" value="" class="searchInput" placeholder="Search:" id="select" ng-model="inputSearch">
+        <p class="messageError">{{message}}</p>
+        <div class="wrapper">
+        <select class="selectOptions" ng-options="option as option.name for option in options" ng-model="selectedOption"></select>
+          <button type="button" name="button" ng-click='search()' class="searchButton" >Search</button>
         </div>
+      </div>
       <div class="filmsContainer" ng-repeat="film in films">
         <section class="film">
           <div class="fdp">

@@ -2,19 +2,23 @@ angular.module('NetFlixApp').controller('FilmsController',function($scope,$http,
 
   $scope.films = {};
   $scope.inputSearch = '';
-  $scope.options = '';
+  $scope.options = [
+    {index:'actor=', name:'Actor'},
+    {index:'director=', name:'Director'},
+    {index:'title=', name:'Title'}
+  ];
+  $scope.selectedOption = $scope.options[0]
+  $scope.message = "";
 
   $scope.search = function() {
-    let inputSearch = $scope.inputSearch;
-    inputSearch.replace(" ","%20");
-    const BaseUrl = "http://netflixroulette.net/api/api.php?"+ $scope.options + inputSearch;
+    const BaseUrl = "http://netflixroulette.net/api/api.php?" + $scope.selectedOption.index + encodeURIComponent($scope.inputSearch);
     console.log(BaseUrl);
-
     var promise = $http.get(BaseUrl);
-        promise.then(function(result){
-          $scope.films = result.data;
-        }).catch(function(error){
-            console.log(error);
-          })
+    promise.then(function(result){
+      $scope.films = result.data;
+      $scope.message = "";
+    }).catch(function(error) {
+      $scope.message = "Sorry could not find the movie";
+      })
   }
 });
