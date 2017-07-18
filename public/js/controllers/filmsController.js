@@ -13,6 +13,7 @@ angular.module('NetFlixApp').controller('FilmsController',function($scope,$http,
   $scope.search = function() {
     const BaseUrl = "http://netflixroulette.net/api/api.php?" + $scope.selectedOption.index + encodeURIComponent($scope.inputSearch);
     console.log(BaseUrl);
+    
     var promise = $http.get(BaseUrl);
     promise.then(function(result){
       $scope.films = result.data;
